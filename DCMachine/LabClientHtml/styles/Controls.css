@@ -1,0 +1,135 @@
+﻿/*
+ * Banner Web User Control
+ */
+#banner td.logo
+{
+	width: 200px;
+}
+#banner td.title
+{
+	color: white;
+	background-color: #003099; /* dark blue */ /* background-color: #500098; dark purple */
+	font-size: 20pt;
+	text-align: center;
+}
+
+/*
+ * Statusbar Web User Control
+ */
+#statusbar td
+{
+	height: 21px;
+	background-color: #BDC2C2;
+	background-image: url(   "../Images/gradient.gif" );
+	padding: 0px 10px 0px 10px;
+	text-align: left;
+	vertical-align: middle;
+}
+#statusbar td.version
+{
+	width: 100%;
+	color: Gray;
+	text-align: right;
+}
+
+/*
+ * Content Header
+ */
+#header table
+{
+	width: 100%;
+}
+#header td
+{
+	vertical-align: middle;
+}
+.header-title
+{
+	font-size: 140%;
+	font-weight: bold;
+	color: #333;
+	padding-left: 5px;
+	text-align: left;
+	vertical-align: top;
+}
+
+/*
+ * Navmenu Web User Control
+ */
+#navmenu td.photo
+{
+	width: 200px;
+}
+#navmenu td.header
+{
+	background-color: #A1BD41; /* Green */ /* background-color: #8141BD; Purple */
+	color: #FFF;
+	padding: 5px;
+	font-weight: bold;
+	text-align: center;
+	border-bottom: 1px solid #8A8B8B;
+}
+#navmenu ul
+{
+	list-style-type: none;
+	margin: 3px;
+	padding: 0px;
+}
+#navmenu li
+{
+	display: block;
+	border: 1px solid #DFDFDF;
+	margin: 1px;
+}
+#navmenu a:link, #navmenu a:visited
+{
+	display: block;
+	background-color: #FFFFFF;
+	color: #000000;
+	padding: 4px;
+	text-decoration: none;
+}
+#navmenu a:hover, #navmenu a:active
+{
+	background-color: #EEF8E4; /* Light green */ /* background-color: #EEE4F8; Light purple */
+}
+
+/*
+ * Feedback Web User Control
+ */
+#feedback td
+{
+	font-size: 90%;
+	height: 19px;
+	background-color: #BDC2C2;
+	border-top: 1px solid #FFF;
+	text-align: right;
+	vertical-align: middle;
+	padding: 0px 10px 0px 10px;
+	background-image: url( "../Images/feedback-gradient.gif" );
+}
+#feedback a
+{
+	color: Gray;
+}
+
+/*
+ * Footer Web User Control
+ */
+#footer td
+{
+	/*background-color: #E7ECEF;*/
+	border-bottom: solid 1px Silver;
+}
+#footer td.ceit-logo
+{
+	/*background-color: #FFFFFF;*/
+}
+#footer td.spacer
+{
+	width: 100%;
+}
+#footer td.mit-logo
+{
+	text-align: right;
+}

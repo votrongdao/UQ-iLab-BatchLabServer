@@ -1,0 +1,75 @@
+/*
+ * "Master" and "Content" webpage layouts
+ */
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	background: #FFFFFF;
+	margin: 1px;
+}
+h1, h2, h3, h4
+{
+	font-weight: bold;
+}
+h1
+{
+	font-size: 160%;
+}
+h2
+{
+	font-size: 140%;
+}
+h3
+{
+	font-size: 120%;
+}
+h4
+{
+	font-size: 100%;
+}
+#master table
+{
+	width: 100%;
+	border: 0px;
+	padding: 0px;
+}
+#master td.menu
+{
+	background-color: #E7ECEF;
+	vertical-align: top;
+	width: 200px;
+}
+#master td.content
+{
+	margin: 0px;
+	padding: 5px;
+	vertical-align: top;
+	width: 100%;
+}
+#master td.headercontent
+{
+	font-size: 140%;
+	font-weight: bold;
+	color: #333;
+}
+#master td.pagecontent
+{
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+}
+
+/*
+ * Buttons
+ */
+td.button
+{
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.aspbutton
+{
+	width: 72px;
+	height: 24px;
+}

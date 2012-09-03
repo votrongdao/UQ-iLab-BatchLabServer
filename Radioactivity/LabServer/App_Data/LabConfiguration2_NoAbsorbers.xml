@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="Radioactivity #2" version="3.1">
+  <navmenuPhoto>
+    <image>~/images/Radioactivity2.png</image>
+  </navmenuPhoto>
+  <labInfo>
+    <text />
+    <url />
+  </labInfo>
+  <configuration>
+    <setup id="RadioactivityVsTime">
+      <name>Radioactivity over Time</name>
+      <description>
+        <p>Measure radioactivity over time at a fixed distance from the source.</p>
+      </description>
+      <distance>30</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="RadioactivityVsDistance">
+      <name>Radioactivity versus Distance</name>
+      <description>
+        <p>Measure radioactivity at various distances from the source.</p>
+      </description>
+      <distance>20,25,30,40,65</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="SimActivityVsTime">
+      <name>Radioactivity over Time (Simulated)</name>
+      <description>
+        <p>Measure radioactivity over time at a fixed distance from a simulated source.</p>
+      </description>
+      <distance>20</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="SimActivityVsDistance">
+      <name>Radioactivity versus Distance (Simulated)</name>
+      <description>
+        <p>Measure radioactivity at various distances from a simulated source.</p>
+      </description>
+      <distance>20,25,30,40,65</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="SimActivityVsTimeNoDelay">
+      <name>Radioactivity over Time (Simulated - No delays)</name>
+      <description>
+        <p>Measure radioactivity over time at a fixed distance from a simulated source. Equipment operation delays are not included.</p>
+      </description>
+      <distance>20</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="SimActivityVsDistanceNoDelay">
+      <name>Radioactivity versus Distance (Simulated - No delays)</name>
+      <description>
+        <p>Measure radioactivity at various distances from a simulated source. Equipment operation delays are not included.</p>
+      </description>
+      <distance>20,25,30,40,65</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <sources default="Strontium-90">
+      <source>
+        <name>None</name>
+        <location>F</location>
+      </source>
+      <source>
+        <name>Strontium-90</name>
+        <location>A</location>
+      </source>
+    </sources>
+    <absorbers default="None">
+      <absorber>
+        <name>None</name>
+        <location>A</location>
+      </absorber>
+    </absorbers>
+    <distances>
+      <minimum>20</minimum>
+      <maximum>95</maximum>
+      <stepsize>5</stepsize>
+    </distances>
+  </configuration>
+  <validation>
+    <vdnDistance>
+      <minimum>19</minimum>
+      <maximum>95</maximum>
+    </vdnDistance>
+    <vdnDuration>
+      <minimum>1</minimum>
+      <maximum>10</maximum>
+    </vdnDuration>
+    <vdnRepeat>
+      <minimum>1</minimum>
+      <maximum>20</maximum>
+    </vdnRepeat>
+    <vdnTotaltime>
+      <minimum>1</minimum>
+      <maximum>750</maximum>
+    </vdnTotaltime>
+  </validation>
+  <experimentSpecification>
+    <setupId />
+    <sourceName />
+    <absorberName />
+    <distance />
+    <duration />
+    <repeat />
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+    <sourceName />
+    <absorberName />
+    <distance />
+    <duration />
+    <repeat />
+    <dataType />
+    <dataVector />
+  </experimentResult>
+  <resultsApplet>
+    <archive></archive>
+    <code></code>
+  </resultsApplet>
+</labConfiguration>

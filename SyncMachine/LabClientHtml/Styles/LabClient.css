@@ -1,0 +1,165 @@
+/*
+ * "Master" and "Content" webpage layouts
+ */
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	background: #FFFFFF;
+	margin: 1px;
+}
+h1, h2, h3, h4
+{
+	font-weight: bold;
+}
+h1
+{
+	font-size: 160%;
+}
+h2
+{
+	font-size: 140%;
+}
+h3
+{
+	font-size: 120%;
+}
+h4
+{
+	font-size: 100%;
+}
+#master table
+{
+	width: 100%;
+	border: 0px;
+	padding: 0px;
+}
+#master td.menu
+{
+	background-color: #E7ECEF;
+	vertical-align: top;
+	width: 200px;
+}
+#master td.content
+{
+	margin: 0px;
+	padding: 5px;
+	vertical-align: top;
+	width: 100%;
+}
+#master td.headercontent
+{
+	font-size: 140%;
+	font-weight: bold;
+	color: #333;
+}
+#master td.pagecontent
+{
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+}
+
+/*
+ * Buttons
+ */
+td.button
+{
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.aspbutton
+{
+	width: 72px;
+	height: 24px;
+}
+
+/*
+ * Setup.aspx, Status.aspx, Results.aspx
+ */
+th
+{
+	text-align: left;
+	padding: 10px 0px 10px 0px;
+}
+td.label
+{
+	width: 60px;
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px 5px 5px 0px;
+}
+td.information
+{
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px 0px 5px 0px;
+}
+td.message
+{
+	width: 100%;
+	text-align: left;
+	vertical-align: middle;
+}
+.messagebox
+{
+	background-color: #EEF8E4;
+	border: solid 1px Gray;
+	padding: 10px;
+	width: 100%;
+}
+
+/*
+ * Setup.aspx
+ */
+#setup td.description
+{
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px 5px 5px 0px;
+}
+#setup .dropdownlist
+{
+	width: 320px;
+}
+
+/*
+ * Status.aspx
+ */
+#status
+{
+}
+
+/*
+ * Results.aspx
+ */
+#results td
+{
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px 5px 5px 0px;
+}
+#results td.label
+{
+	padding-right: 5px;
+	padding-bottom: 0px;
+}
+#results td.dataright
+{
+	padding-bottom: 0px;
+	width: 100%;
+}
+#results td.button
+{
+	padding-bottom: 10px;
+}
+
+/*
+ * Expired.htm
+ */
+.expired
+{
+	font-size: 120%;
+	margin: 25px 0px 15px 25px;
+}

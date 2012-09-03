@@ -1,0 +1,37 @@
+<!ELEMENT equipmentConfig (hardwarePresent, powerupDelay, powerdownTimeout, flexMotion, serialLcd, radiationCounter, physicsCounter*, st360Counter)>
+<!ATTLIST equipmentConfig title CDATA #REQUIRED version CDATA #REQUIRED>
+<!ELEMENT flexMotion (boardID, tube, sources, absorbers*, initialiseDelay)>
+<!ELEMENT tube (axisId, offsetDistance, homeDistance, moveRate, initAxis)>
+<!ELEMENT sources (axisId, encoderPositions, selectTimes, returnTimes, firstLocation, homeLocation)>
+<!ELEMENT absorbers (axisId, encoderPositions, selectTimes, returnTimes, firstLocation, homeLocation)>
+<!ELEMENT serialLcd (type, network, serial, writeLineTime, initialiseDelay)>
+<!ELEMENT network (ipaddr, port)>
+<!ELEMENT serial (port, baud)>
+<!ELEMENT radiationCounter (type)>
+<!ELEMENT st360Counter (type, network, serial, voltage, volume, timeAdjustment, initialiseDelay)>
+<!ELEMENT physicsCounter (timeAdjustment, initialiseDelay)>
+<!ELEMENT timeAdjustment (capture)>
+
+<!ELEMENT hardwarePresent (#PCDATA)>
+<!ELEMENT powerupDelay (#PCDATA)>
+<!ELEMENT powerdownTimeout (#PCDATA)>
+<!ELEMENT boardID (#PCDATA)>
+<!ELEMENT axisId (#PCDATA)>
+<!ELEMENT initialiseDelay (#PCDATA)>
+<!ELEMENT offsetDistance (#PCDATA)>
+<!ELEMENT homeDistance (#PCDATA)>
+<!ELEMENT moveRate (#PCDATA)>
+<!ELEMENT initAxis (#PCDATA)>
+<!ELEMENT encoderPositions (#PCDATA)>
+<!ELEMENT selectTimes (#PCDATA)>
+<!ELEMENT returnTimes (#PCDATA)>
+<!ELEMENT firstLocation (#PCDATA)>
+<!ELEMENT homeLocation (#PCDATA)>
+<!ELEMENT type (#PCDATA)>
+<!ELEMENT ipaddr (#PCDATA)>
+<!ELEMENT port (#PCDATA)>
+<!ELEMENT baud (#PCDATA)>
+<!ELEMENT writeLineTime (#PCDATA)>
+<!ELEMENT voltage (#PCDATA)>
+<!ELEMENT volume (#PCDATA)>
+<!ELEMENT capture (#PCDATA)>

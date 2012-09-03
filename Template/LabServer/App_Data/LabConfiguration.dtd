@@ -1,0 +1,36 @@
+<!ELEMENT labConfiguration (navmenuPhoto, labCamera, labInfo, configuration, validation, experimentSpecification, experimentResult, resultsApplet)>
+<!ATTLIST labConfiguration title CDATA #REQUIRED version CDATA #REQUIRED>
+
+<!ELEMENT navmenuPhoto (image)>
+<!ELEMENT labCamera (url)>
+<!ELEMENT labInfo (text, url)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT configuration (setup+)>
+<!ELEMENT setup (name, description)>
+<!ATTLIST setup id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (p*)>
+<!ELEMENT p (#PCDATA)>
+<!-- YOUR CODE HERE -->
+
+<!ELEMENT validation (#PCDATA)>
+
+<!ELEMENT experimentSpecification (setupId)>
+<!ELEMENT setupId (#PCDATA)>
+<!-- YOUR CODE HERE -->
+
+<!ELEMENT experimentResult (timestamp, title, version, experimentId, unitId, setupId, setupName)>
+<!ELEMENT timestamp (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT experimentId (#PCDATA)>
+<!ELEMENT unitId (#PCDATA)>
+<!ELEMENT setupName (#PCDATA)>
+<!-- YOUR CODE HERE -->
+
+<!ELEMENT resultsApplet (archive, code)>
+<!ELEMENT archive (#PCDATA)>
+<!ELEMENT code (#PCDATA)>

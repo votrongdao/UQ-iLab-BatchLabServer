@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<equipmentConfig title="AC Machine" version="3.1">
+  <powerupDelay />
+  <powerdownTimeout />
+  <initialiseDelay>23</initialiseDelay>
+  <initialiseEquipment>true</initialiseEquipment>
+  <machineIP>10.0.3.211</machineIP>
+  <!--<machineIP>127.0.0.1</machineIP>-->
+  <machinePort>502</machinePort>
+  <measurementDelay>10</measurementDelay>
+</equipmentConfig>

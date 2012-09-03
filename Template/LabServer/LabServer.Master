@@ -1,0 +1,67 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="LabServer.Master.cs"
+    Inherits="LabServer.LabServerMaster" %>
+
+<%@ Register TagPrefix="uc" TagName="Banner" Src="~/Controls/Banner.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Statusbar" Src="~/Controls/Statusbar.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Header" Src="~/Controls/Header.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Navmenu" Src="~/Controls/Navmenu.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Feedback" Src="~/Controls/Feedback.ascx" %>
+<%@ Register TagPrefix="uc" TagName="Footer" Src="~/Controls/Footer.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>LabServer Master Page</title>
+    <link rel="stylesheet" type="text/css" href="styles/LabServer.css" />
+    <link rel="stylesheet" type="text/css" href="styles/Controls.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <table id="master" cols="2" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td colspan="2">
+                <uc:Banner ID="Banner" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <uc:Statusbar ID="Statusbar" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td class="menu">
+                <uc:Navmenu ID="Navmenu" runat="server" />
+            </td>
+            <td class="content">
+                <table cols="1" border="0" cellspacing="0" cellpadding="0">
+                    <tr>
+                        <td class="headercontent">
+                            <uc:Header ID="Header" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div id="pagecontent">
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <uc:Feedback ID="Feedback" runat="server" />
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2">
+                <uc:Footer ID="Footer" runat="server" />
+            </td>
+        </tr>
+    </table>
+    </form>
+</body>
+</html>

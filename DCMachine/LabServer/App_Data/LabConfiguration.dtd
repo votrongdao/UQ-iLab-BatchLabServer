@@ -1,0 +1,56 @@
+<!ELEMENT labConfiguration (navmenuPhoto, labCamera, labInfo, configuration, validation, experimentSpecification, experimentResult, resultsApplet)>
+<!ATTLIST labConfiguration title CDATA #REQUIRED version CDATA #REQUIRED>
+
+<!ELEMENT navmenuPhoto (image)>
+<!ELEMENT labCamera (url)>
+<!ELEMENT labInfo (text, url)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT configuration (setup+)>
+<!ELEMENT setup (name, description, paramsTitle, speedMin*, speedMax*, speedStep*, fieldMin*, fieldMax*, fieldStep*, loadMin*, loadMax*, loadStep*)>
+<!ATTLIST setup id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (p*)>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT paramsTitle (#PCDATA)>
+
+<!ELEMENT validation (vdnSpeed, vdnField, vdnLoad)>
+<!ELEMENT vdnSpeed (minimum, maximum, stepMin, stepMax)>
+<!ELEMENT vdnField (minimum, maximum, stepMin, stepMax)>
+<!ELEMENT vdnLoad (minimum, maximum, stepMin, stepMax)>
+<!ELEMENT minimum (#PCDATA)>
+<!ELEMENT maximum (#PCDATA)>
+<!ELEMENT stepMin (#PCDATA)>
+<!ELEMENT stepMax (#PCDATA)>
+
+<!ELEMENT experimentSpecification (setupId, speedMin, speedMax, speedStep, fieldMin, fieldMax, fieldStep, loadMin, loadMax, loadStep)>
+<!ELEMENT setupId (#PCDATA)>
+<!ELEMENT speedMin (#PCDATA)>
+<!ELEMENT speedMax (#PCDATA)>
+<!ELEMENT speedStep (#PCDATA)>
+<!ELEMENT fieldMin (#PCDATA)>
+<!ELEMENT fieldMax (#PCDATA)>
+<!ELEMENT fieldStep (#PCDATA)>
+<!ELEMENT loadMin (#PCDATA)>
+<!ELEMENT loadMax (#PCDATA)>
+<!ELEMENT loadStep (#PCDATA)>
+
+<!ELEMENT experimentResult (timestamp, title, version, experimentId, unitId, setupId, setupName,
+  speedMin, speedMax, speedStep, fieldMin, fieldMax, fieldStep, loadMin, loadMax, loadStep,
+  speedVector, fieldVector, voltageVector, loadVector)>
+<!ELEMENT timestamp (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT experimentId (#PCDATA)>
+<!ELEMENT unitId (#PCDATA)>
+<!ELEMENT setupName (#PCDATA)>
+<!ELEMENT speedVector (#PCDATA)>
+<!ELEMENT fieldVector (#PCDATA)>
+<!ELEMENT voltageVector (#PCDATA)>
+<!ELEMENT loadVector (#PCDATA)>
+
+<!ELEMENT resultsApplet (archive, code)>
+<!ELEMENT archive (#PCDATA)>
+<!ELEMENT code (#PCDATA)>

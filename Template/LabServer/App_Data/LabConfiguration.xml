@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="Template" version="3.2">
+  <navmenuPhoto>
+    <image>~/images/generic_content32.jpg</image>
+  </navmenuPhoto>
+  <labCamera>
+    <url />
+  </labCamera>
+  <labInfo>
+    <text />
+    <url />
+  </labInfo>
+  <configuration>
+    <setup id="Equipment">
+      <name>Setup for Equipment</name>
+      <description>
+        <p>Template setup for driving equipment.</p>
+      </description>
+    </setup>
+    <setup id="Simulation">
+      <name>Setup for Simulation</name>
+      <description>
+        <p>Template setup for running a simulation.</p>
+      </description>
+    </setup>
+    <!-- YOUR CODE HERE -->
+  </configuration>
+  <validation>
+    <!-- YOUR CODE HERE -->
+  </validation>
+  <experimentSpecification>
+    <setupId />
+    <!-- YOUR CODE HERE -->
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+    <!-- YOUR CODE HERE -->
+  </experimentResult>
+  <resultsApplet>
+    <archive></archive>
+    <code></code>
+  </resultsApplet>
+</labConfiguration>

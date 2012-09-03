@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="Time-Of-Day" version="3.1">
+  <navmenuPhoto>
+    <image>~/images/sundial.jpg</image>
+  </navmenuPhoto>
+  <labCamera>
+    <url />
+  </labCamera>
+  <labInfo>
+    <text>UQ iLab Projects - Time-Of-Day</text>
+    <url>http://icampus.uq.edu.au/projects/ilab/_batch_timeofday/index.php</url>
+  </labInfo>
+  <configuration>
+    <setup id="LocalClock">
+      <name>Local Time</name>
+      <description>
+        <p>Obtain the date and time from the LabServer's computer clock.</p>
+      </description>
+    </setup>
+    <setup id="NTPServer">
+      <name>Network Time</name>
+      <description>
+        <p>Obtain the date and time from a Network Time Prototocol (NTP) server on the internet.</p>
+      </description>
+    </setup>
+    <timeServers>
+      <url>localhost</url>
+      <url>cuscus.cc.uq.edu.au</url>
+      <url>ntp0.broad.mit.edu</url>
+      <url>url.does.not.exist</url>
+    </timeServers>
+    <timeFormats default="12-Hour">
+      <timeFormat>12-Hour</timeFormat>
+      <timeFormat>24-Hour</timeFormat>
+    </timeFormats>
+  </configuration>
+  <experimentSpecification>
+    <setupId />
+    <serverUrl />
+    <formatName />
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+    <serverUrl />
+    <formatName />
+    <timeofday />
+    <dayofweek />
+    <day />
+    <month />
+    <year />
+    <hours />
+    <minutes />
+    <seconds />
+  </experimentResult>
+  <resultsApplet>
+    <archive>Applets/TimeOfDayResults.jar</archive>
+    <code>src/ResultsApplet.class</code>
+  </resultsApplet>
+</labConfiguration>

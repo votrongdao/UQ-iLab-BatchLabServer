@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<equipmentConfig title="TimeOfDay" version="3.1">
+  <powerupDelay>0</powerupDelay>
+  <powerdownTimeout />
+  <initialiseDelay>0</initialiseDelay>
+  <ntpTimeout>13</ntpTimeout>
+</equipmentConfig>

@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<equipmentConfig title="Synchronous Machine" version="3.2">
+  <powerupDelay />
+  <powerdownTimeout />
+  <plc>
+    <network>
+      <ipAddr>10.0.3.218</ipAddr>
+      <!--<ipAddr>127.0.0.1</ipAddr>-->
+      <ipPort>502</ipPort>
+      <timeouts>
+        <receive>3000</receive>
+      </timeouts>
+    </network>
+    <modbus>
+      <slaveId>1</slaveId>
+    </modbus>
+    <doInitialise>true</doInitialise>
+    <initialiseDelay>7</initialiseDelay>
+  </plc>
+  <dcDrive>
+    <network>
+      <ipAddr>10.0.3.219</ipAddr>
+      <!--<ipAddr>127.0.0.1</ipAddr>-->
+      <ipPort>502</ipPort>
+      <timeouts>
+        <receive>3000</receive>
+      </timeouts>
+    </network>
+    <modbus>
+      <slaveId>0</slaveId>
+    </modbus>
+    <doInitialise>true</doInitialise>
+    <initialiseDelay>15</initialiseDelay>
+  </dcDrive>
+  <configuration>
+    <openCircuitVaryField>
+      <speed>1500</speed>
+      <maxFieldCurrent>2.8</maxFieldCurrent>
+      <maxSyncFieldIncreases>40</maxSyncFieldIncreases>
+      <maxMeasurements>40</maxMeasurements>
+      <executionTimes>
+        <initialise>5</initialise>
+        <start>21</start>
+        <run>115</run>
+        <stop>47</stop>
+        <finalise>1</finalise>
+      </executionTimes>
+      <measurements>
+        <count/>
+        <fieldCurrent name="Field Current" units="" format="f03"/>
+        <speed name="Motor Speed" units="" format="f0"/>
+        <voltage name="Armature Voltage" units="" format="f01"/>
+      </measurements>
+    </openCircuitVaryField>
+
+    <openCircuitVarySpeed>
+      <fieldCurrent>2.4</fieldCurrent>
+      <maxSyncFieldIncreases>36</maxSyncFieldIncreases>
+      <speed>
+        <min>100</min>
+        <max>1500</max>
+        <step>100</step>
+      </speed>
+      <executionTimes>
+        <initialise>5</initialise>
+        <start>82</start>
+        <run>124</run>
+        <stop>46</stop>
+        <finalise>0</finalise>
+      </executionTimes>
+      <measurements>
+        <count/>
+        <speed name="Motor Speed" units="" format="f0"/>
+        <fieldCurrent name="Field Current" units="" format="f03"/>
+        <voltage name="Armature Voltage" units="" format="f01"/>
+      </measurements>
+    </openCircuitVarySpeed>
+
+    <shortCircuitVaryField>
+      <speed>1500</speed>
+      <maxFieldCurrent>2.8</maxFieldCurrent>
+      <maxSyncFieldIncreases>40</maxSyncFieldIncreases>
+      <maxStatorCurrent>10.43</maxStatorCurrent>
+      <executionTimes>
+        <initialise>5</initialise>
+        <start>21</start>
+        <run>116</run>
+        <stop>46</stop>
+        <finalise>0</finalise>
+      </executionTimes>
+      <measurements>
+        <count/>
+        <fieldCurrent name="Field Current" units="" format="f03"/>
+        <speed name="Motor Speed" units="" format="f0"/>
+        <statorCurrent name="Stator Current" units="" format="f02"/>
+      </measurements>
+    </shortCircuitVaryField>
+
+    <preSynchronisation>
+      <speed>1500</speed>
+      <speedTrim>
+        <low>2</low>
+        <high>3</high>
+      </speedTrim>
+      <maxFieldCurrent>2.8</maxFieldCurrent>
+      <maxSyncFieldIncreases>40</maxSyncFieldIncreases>
+      <simpleMovingAverage>3</simpleMovingAverage>
+      <maxMeasurements>10</maxMeasurements>
+      <phaseChangeLimit>
+        <low>5</low>
+        <high>30</high>
+      </phaseChangeLimit>
+      <phaseSynchronism>
+        <low>-20</low>
+        <high>5</high>
+      </phaseSynchronism>
+      <executionTimes>
+        <initialise>5</initialise>
+        <start>21</start>
+        <run>135</run>
+        <!-- "run" can be anywhere from 90 to 180 -->
+        <stop>46</stop>
+        <finalise>0</finalise>
+      </executionTimes>
+      <measurements>
+        <count/>
+        <fieldCurrent name="Field Current" units="" format="f03"/>
+        <speedSetpoint name="Speed Setpoint" units="" format="f01"/>
+        <syncVoltage name="Sync Voltage" units="" format="f01"/>
+        <syncFrequency name="Sync Frequency" units="" format="f02"/>
+        <mainsVoltage name="Mains Voltage" units="" format="f01"/>
+        <mainsFrequency name="Mains Frequency" units="" format="f02"/>
+        <syncMainsPhase name="Sync-to-Mains Phase" units="" format="f01"/>
+        <synchronism name="Synchronism" />
+      </measurements>
+    </preSynchronisation>
+
+    <synchronisation>
+      <speed>1500</speed>
+      <speedTrim>
+        <low>2</low>
+        <high>3</high>
+      </speedTrim>
+      <maxFieldCurrent>2.8</maxFieldCurrent>
+      <maxSyncFieldIncreases>40</maxSyncFieldIncreases>
+      <maxMeasurements>12</maxMeasurements>
+      <simpleMovingAverage>3</simpleMovingAverage>
+      <phaseChangeLimit>
+        <low>5</low>
+        <high>30</high>
+      </phaseChangeLimit>
+      <phaseSynchronism>
+        <low>-20</low>
+        <high>5</high>
+      </phaseSynchronism>
+      <speedSynchronism>1510</speedSynchronism>
+      <measurementCount>5</measurementCount>
+      <torque>
+        <min>10</min>
+        <max>50</max>
+        <step>5</step>
+      </torque>
+      <powerFactor>
+        <low>0.90</low>
+        <high>0.97</high>
+      </powerFactor>
+      <executionTimes>
+        <initialise>5</initialise>
+        <start>135</start>
+        <!-- "start" can be anywhere from 90 to 180 -->
+        <run>240</run>
+        <stop>55</stop>
+        <finalise>0</finalise>
+      </executionTimes>
+      <measurements>
+        <count/>
+        <torqueSetpoint name="Torque Setpoint" units="" format="f0"/>
+        <fieldCurrent name="Field Current" units="" format="f03"/>
+        <syncVoltage name="Sync Voltage" units="" format="f01"/>
+        <syncFrequency name="Sync Frequency" units="" format="f02"/>
+        <powerFactor name="Power Factor" format="f02"/>
+        <realPower name="Real Power" units="" format="f0"/>
+        <reactivePower name="Reactive Power" units="" format="f0"/>
+        <phaseCurrent name="Phase Current" units="" format="f02"/>
+      </measurements>
+    </synchronisation>
+  </configuration>
+</equipmentConfig>

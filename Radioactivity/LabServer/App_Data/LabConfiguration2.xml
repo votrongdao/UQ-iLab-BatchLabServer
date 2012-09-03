@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="Radioactivity #2" version="3.2">
+  <navmenuPhoto>
+    <image>~/images/Radioactivity2.png</image>
+  </navmenuPhoto>
+  <labCamera>
+    <url>http://openilabs.ilab.uq.edu.au/LabCameras/Radioactivity2.htm</url>
+  </labCamera>
+  <labInfo>
+    <text />
+    <url />
+  </labInfo>
+  <configuration>
+    <setup id="RadioactivityVsTime">
+      <name>Radioactivity over Time</name>
+      <description>
+        <p>Measure radioactivity over time at a fixed distance from the source.</p>
+      </description>
+      <absorberName>None</absorberName>
+      <distance>30</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="RadioactivityVsDistance">
+      <name>Radioactivity versus Distance</name>
+      <description>
+        <p>Measure radioactivity at various distances from the source.</p>
+      </description>
+      <absorberName>None</absorberName>
+      <distance>20,25,30,40,65</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="RadioactivityVsAbsorber">
+      <name>Radioactivity versus Absorber</name>
+      <description>
+        <p>Measure radioactivity through various absorbers at a fixed distance from the source.</p>
+      </description>
+      <absorberName>None,Paper,Aluminium Sheet,Lead Sheet</absorberName>
+      <distance>10</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <setup id="RadioactivityVsAbsorber">
+      <name>Radioactivity versus Absorber (Foils)</name>
+      <description>
+        <p>Measure radioactivity through various absorbers at a fixed distance from the source.</p>
+      </description>
+      <absorberName>None,Alum.Foil x1,Alum.Foil x2,Alum.Foil x4,Alum.Foil x8,Alum.Foil x16,Alum.Foil x32,Alum.Foil x64,Alum.Foil x???</absorberName>
+      <distance>10</distance>
+      <duration>5</duration>
+      <repeat>3</repeat>
+    </setup>
+    <sources default="Strontium-90">
+      <source>
+        <name>None</name>
+        <location>F</location>
+      </source>
+      <source>
+        <name>Strontium-90</name>
+        <location>C</location>
+      </source>
+    </sources>
+    <absorbers default="None">
+      <absorber>
+        <name>None</name>
+        <location>A</location>
+      </absorber>
+      <absorber>
+        <name>Paper</name>
+        <location>B</location>
+      </absorber>
+      <absorber>
+        <name>Aluminium Sheet</name>
+        <location>C</location>
+      </absorber>
+      <absorber>
+        <name>Lead Sheet</name>
+        <location>D</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x1</name>
+        <location>E</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x2</name>
+        <location>F</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x4</name>
+        <location>G</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x8</name>
+        <location>H</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x16</name>
+        <location>I</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x32</name>
+        <location>J</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x64</name>
+        <location>K</location>
+      </absorber>
+      <absorber>
+        <name>Alum.Foil x???</name>
+        <location>L</location>
+      </absorber>
+      <absorber>
+        <name>Lead Rod</name>
+        <location>M</location>
+      </absorber>
+      <absorber>
+        <name>Aluminium Rod</name>
+        <location>N</location>
+      </absorber>
+    </absorbers>
+    <distances>
+      <minimum>10</minimum>
+      <maximum>90</maximum>
+      <stepsize>5</stepsize>
+    </distances>
+  </configuration>
+  <validation>
+    <vdnDistance>
+      <minimum>10</minimum>
+      <maximum>90</maximum>
+    </vdnDistance>
+    <vdnDuration>
+      <minimum>1</minimum>
+      <maximum>10</maximum>
+    </vdnDuration>
+    <vdnRepeat>
+      <minimum>1</minimum>
+      <maximum>10</maximum>
+    </vdnRepeat>
+    <vdnTotaltime>
+      <minimum>1</minimum>
+      <maximum>1200</maximum>
+    </vdnTotaltime>
+  </validation>
+  <experimentSpecification>
+    <setupId />
+    <sourceName />
+    <absorberName />
+    <distance />
+    <duration />
+    <repeat />
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+    <sourceName />
+    <absorberName />
+    <distance />
+    <duration />
+    <repeat />
+    <dataType />
+    <dataVector />
+  </experimentResult>
+  <resultsApplet>
+    <archive></archive>
+    <code></code>
+  </resultsApplet>
+</labConfiguration>

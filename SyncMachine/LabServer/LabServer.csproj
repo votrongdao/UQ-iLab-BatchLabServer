@@ -1,0 +1,171 @@
+﻿<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{C3268EE9-FD28-46C4-9447-5DFE7DAF4A51}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LabServer</RootNamespace>
+    <AssemblyName>LabServer</AssemblyName>
+    <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Web.Services" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="App_Data\LabConfiguration2.xml" />
+    <Content Include="App_Data\LabConfiguration.dtd" />
+    <Content Include="App_Data\LabConfiguration1.xml" />
+    <Content Include="Controls\Banner.ascx" />
+    <Content Include="Controls\Feedback.ascx" />
+    <Content Include="Controls\Footer.ascx" />
+    <Content Include="Controls\Header.ascx" />
+    <Content Include="Controls\Navmenu.ascx" />
+    <Content Include="Controls\Statusbar.ascx" />
+    <Content Include="Default.aspx" />
+    <Content Include="Global.asax" />
+    <Content Include="Images\ceit_logo.gif" />
+    <Content Include="Images\feedback-gradient.gif" />
+    <Content Include="Images\gradient.gif" />
+    <Content Include="Images\level2-arrow.gif" />
+    <Content Include="Images\level2-underline.gif" />
+    <Content Include="Images\mit-blackred-footer1.gif" />
+    <Content Include="Images\syncmachine.jpg" />
+    <Content Include="Images\uq-logo.gif" />
+    <Content Include="LabServer.Master" />
+    <Content Include="LabServerWebService.asmx" />
+    <Content Include="Styles\Controls.css" />
+    <Content Include="Styles\LabServer.css" />
+    <None Include="Web.config" />
+    <Content Include="Web.config.template" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Consts.cs" />
+    <Compile Include="Controls\Banner.ascx.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Banner.ascx.designer.cs">
+      <DependentUpon>Banner.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Feedback.ascx.cs">
+      <DependentUpon>Feedback.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Feedback.ascx.designer.cs">
+      <DependentUpon>Feedback.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Footer.ascx.designer.cs">
+      <DependentUpon>Footer.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Header.ascx.designer.cs">
+      <DependentUpon>Header.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Navmenu.ascx.cs">
+      <DependentUpon>Navmenu.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Navmenu.ascx.designer.cs">
+      <DependentUpon>Navmenu.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\Statusbar.ascx.cs">
+      <DependentUpon>Statusbar.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Controls\Statusbar.ascx.designer.cs">
+      <DependentUpon>Statusbar.ascx</DependentUpon>
+    </Compile>
+    <Compile Include="Default.aspx.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Default.aspx.designer.cs">
+      <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="LabServer.Master.cs">
+      <DependentUpon>LabServer.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="LabServer.Master.designer.cs">
+      <DependentUpon>LabServer.Master</DependentUpon>
+    </Compile>
+    <Compile Include="LabServerWebService.asmx.cs">
+      <DependentUpon>LabServerWebService.asmx</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\LabLibraries\LibraryLabServerEngine\LibraryLabServerEngine.csproj">
+      <Project>{E8C95691-6933-4B90-85B8-27D5F308CD14}</Project>
+      <Name>LibraryLabServerEngine</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\LabLibraries\LibraryLab\LibraryLab.csproj">
+      <Project>{7266AE91-D308-40AC-947C-486745471E84}</Project>
+      <Name>LibraryLab</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LibraryLabServer\LibraryLabServer.csproj">
+      <Project>{B5B593E5-B59D-4696-A34E-964222378406}</Project>
+      <Name>LibraryLabServer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v9.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>False</AutoAssignPort>
+          <DevelopmentServerPort>8083</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

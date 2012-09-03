@@ -1,0 +1,43 @@
+Visual Studio Development Ports
+-------------------------------
+
+DummyServiceBroker:
+	Port: 8081
+	Virtual Path: /
+	Url: http://localhost:8081/
+	
+DummyLabServer:
+	Port: 8082
+	Virtual Path: /
+	Url: http://localhost:8082/
+	
+LabServer:
+	Port: 8083
+	Virtual Path: /
+	Url: http://localhost:8083/
+	
+LabClientHtml:
+	Port: 8084
+	Virtual Path: /
+	Url: http://localhost:8084/
+	
+IServiceBroker:
+	Port: 8085
+	Virtual Path: /
+	Url: http://localhost:8085/
+	
+ILabServer:
+	Port: 8086
+	Virtual Path: /
+	Url: http://localhost:8086/
+	
+EquipmentService:
+	Port: 8087
+	Virtual Path: /
+	Url: http://localhost:8087/
+
+DummyEquipmentService:
+	Port: 8088
+	Virtual Path: /
+	Url: http://localhost:8088/
+

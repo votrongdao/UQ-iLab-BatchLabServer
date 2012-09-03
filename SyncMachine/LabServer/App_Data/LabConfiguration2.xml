@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="Synchronous Machine" version="3.2">
+  <navmenuPhoto>
+    <image>~/images/syncmachine.jpg</image>
+  </navmenuPhoto>
+  <labCamera>
+    <url>http://openilabs.ilab.uq.edu.au/LabCameras/SyncMachine2.htm</url>
+  </labCamera>
+  <labInfo>
+    <text />
+    <url />
+  </labInfo>
+  <configuration>
+    <setup id="OpenCircuitVaryField">
+      <name>Open-circuit: Voltage versus Field Current</name>
+      <description>
+        <p>
+          The synchronous machine is run at a fixed speed of 1500 RPM.
+          The field current is increased from 0.0 amps to 2.8 amps in steps of approximately 100mA.
+          At each step, the armature voltage of the synchronous machine is measured.
+        </p>
+      </description>
+    </setup>
+    <setup id="OpenCircuitVarySpeed">
+      <name>Open-circuit: Voltage versus Motor Speed</name>
+      <description>
+        <p>
+          The synchronous machine is run with a fixed field current of approximately 2.8 amps.
+          The speed is increased from 100 RPM to 1500 RPM in steps of 100 RPM.
+          At each step, the armature voltage of the synchronous machine is measured.
+        </p>
+      </description>
+    </setup>
+    <setup id="ShortCircuitVaryField">
+      <name>Short-circuit: Stator Current versus Field Current</name>
+      <description>
+        <p>
+          The stator terminals of the synchronous machine are shorted and the synchronous machine is run at a fixed speed of 1500 RPM.
+          The field current is increased from 0.0 amps to 2.8 amps in steps of approximately 100mA.
+          At each step, the stator current of the synchronous machine is measured.
+        </p>
+      </description>
+    </setup>
+    <setup id="PreSynchronisation">
+      <name>Pre-synchronisation: Examining the process</name>
+      <description>
+        <p>
+          Connecting the synchronous machine to the electricity grid (or mains) requires the machine to have the same phase sequence as
+          the mains (machine rotating in the correct direction), the same line voltages as the mains, and the line voltages must be
+          in phase. There are three main steps required before synchronisation can be achieved:
+        </p>
+        <p>
+          1. The field current of the synchronous machine is increased until the machine voltage is just greater than the mains voltage.
+        </p>
+        <p>
+          2. The speed of the synchronous machine is increased from just below the synchronous speed of 1500 RPM until the machine
+          frequency is just greater than the mains frequency.
+        </p>
+        <p>
+          3. The phase of the synchronous machine is compared with the phase of the mains until the phase difference is close to zero.
+          The machine speed is increased or decreased slightly to change the phase difference if needed. This step may take some time
+          because the frequency of the mains tends to drift. A phase change of 10 to 20 degrees per second between the synchronous machine
+          and the mains will generally achieve synchronisation.
+        </p>
+        <p>
+          When the above steps have been carried out, an attempt is made to synchronise the machine to the mains by closing a three phase
+          contactor. If synchronisation succeeds, it is held briefly before the contactor is opened and the synchronous machine is
+          disconnected from the mains.
+        </p>
+      </description>
+    </setup>
+    <setup id="Synchronisation">
+      <name>Synchronisation: Operation as a Generator</name>
+      <description>
+        <p>
+          The synchronous machine is synchronised with and connected to the electricity grid.  The speed setpoint is set at 10 RPM above
+          synchronous speed to make the machine drive harder and in doing so, operate as a generator and transfer power into the
+          electricity grid.
+        </p>
+        <p>
+          The torque setpoint of the DC drive, which is driving the synchronous machine, is increased and measurements are taken. These
+          measurements include the synchronous machine field current and phase current, the real and reactive power generated and the
+          power factor.
+        </p>
+        <p>
+          As the torque is increased, the synchronous machine field current will need to be decreased to keep the power factor at about
+          0.95 although anywhere from 0.8 to 1.0 will be quite alright. Similarly, as the the torque is reduced, the synchronous machine
+          field current will need to be increased.
+        </p>
+        <p>
+          The synchronous machine cannot simply be disconnected from the electricity grid while generating power greater than 400 watts.
+          This would cause significant arcing across the three phase contactor and damage the equipment. So, the torque setpoint of the
+          DC drive is reduced until the generated power is reduced sufficiently. Measurements are again taken as the torque is reduced.
+        </p>
+      </description>
+    </setup>
+  </configuration>
+  <validation />
+  <experimentSpecification>
+    <setupId />
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+  </experimentResult>
+  <resultsApplet>
+    <archive></archive>
+    <code></code>
+  </resultsApplet>
+</labConfiguration>

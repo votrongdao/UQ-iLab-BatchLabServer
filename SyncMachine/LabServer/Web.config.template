@@ -1,0 +1,74 @@
+﻿<?xml version="1.0"?>
+
+<configuration>
+
+  <appSettings>
+
+    <!-- LabServer Guid - MUST BE SUPPLIED. -->
+    <add key="LabServerGuid" value="" />
+
+    <!-- Path for log files, filename format is the current date of the form YYYYMMDD.log -->
+    <add key="LogFilesPath" value="LogFiles" />
+
+    <!-- XML lab configuration filename -->
+    <add key="XmlLabConfigurationFilename" value="App_Data\LabConfiguration.xml" />
+
+    <!-- Database connection string -->
+    <add key="SqlConnection" value="data source=.\SQLEXPRESS;initial catalog=SyncMachine_LabServer;Integrated Security=SSPI" />
+
+    <!-- ServiceBroker checking flag - Set to false to disable ServiceBroker authentication -->
+    <add key="AuthenticateCaller" value="true"/>
+
+    <!-- Log ServiceBroker Id and Passkey - Set to false or remove to not log Id and Passkey -->
+    <add key="LogCallerIdPasskey" value="false"/>
+
+    <!-- Number of units in the farm -->
+    <add key="FarmSize" value="1" />
+
+    <!-- Equipment service comma-seperated-value list: Webservice URL and passkey -->
+    <add key="EquipmentService" value="" />
+
+    <!-- Comma seperated list of email addresses for when the experiment completes success or is cancelled - if empty, no email is sent -->
+    <add key="EmailAddressesExperimentCompleted" value="" />
+    <!-- Comma seperated list of email addresses for when the experiment fails - if empty, no email is sent -->
+    <add key="EmailAddressesExperimentFailed" value="" />
+    <!-- Email address of sender -->
+    <add key="EmailAddressLabServer" value="" />
+
+  </appSettings>
+
+  <connectionStrings/>
+  
+    <system.web>
+        <!-- 
+            Set compilation debug="true" to insert debugging 
+            symbols into the compiled page. Because this 
+            affects performance, set this value to true only 
+            during development.
+        -->
+        <compilation debug="false">
+
+        </compilation>
+        <!--
+            The <authentication> section enables configuration 
+            of the security authentication mode used by 
+            ASP.NET to identify an incoming user. 
+        -->
+        <authentication mode="Windows" />
+        <!--
+            The <customErrors> section enables configuration 
+            of what to do if/when an unhandled error occurs 
+            during the execution of a request. Specifically, 
+            it enables developers to configure html error pages 
+            to be displayed in place of a error stack trace.
+
+        <customErrors mode="RemoteOnly" defaultRedirect="GenericErrorPage.htm">
+            <error statusCode="403" redirect="NoAccess.htm" />
+            <error statusCode="404" redirect="FileNotFound.htm" />
+        </customErrors>
+        -->
+
+
+    </system.web>
+
+</configuration>

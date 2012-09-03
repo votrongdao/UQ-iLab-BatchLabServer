@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="DC Machine" version="3.1">
+  <navmenuPhoto>
+    <image>~/images/dcmachine.jpg</image>
+  </navmenuPhoto>
+  <labCamera>
+    <url>http://openilabs.ilab.uq.edu.au/LabCameras/DCMachine1.htm</url>
+  </labCamera>
+  <labInfo>
+    <text />
+    <url />
+  </labInfo>
+  <configuration>
+    <setup id="VoltageVsSpeed">
+      <name>Generator Voltage versus Speed</name>
+      <description>
+        <p>
+          This experiment looks at the variation of the open circuit armature voltage as the speed
+          of the DC motor is varied.  By examining this behaviour, we can understand one part of the
+          fundamental relationship between the induced EMF of a DC generator, the speed of the rotor
+          and the field current of the rotor (which controls the flux density).  In this experiment,
+          the field current is set at a constant value (1A).
+        </p>
+        <p>
+          The speed of the DC motor in this case is controlled by the induction motor, which is
+          mechanically coupled to the DC motor shaft.  The speed of this induction machine can be
+          precisely controlled using a variable speed drive (VSD) in both the forward and reverse
+          directions.
+        </p>
+        <p>
+          The values returned in this experiment are the open circuit armature voltage and the speed
+          of the motor in rpm.
+        </p>
+      </description>
+      <paramsTitle>Speed (RPM):</paramsTitle>
+      <speedMin>-1500</speedMin>
+      <speedMax>1500</speedMax>
+      <speedStep>500</speedStep>
+    </setup>
+    <setup id="VoltageVsField">
+      <name>Generator Voltage versus Field Current</name>
+      <description>
+        <p>
+          This experiment examines the variation of the open circuit armature voltage of the DC
+          machine as the field current on the rotor is varied.  The amount of current in the rotor
+          windings on the DC machine determines the amount of flux within the magnetic system of
+          the machine.  The induced EMF of the DC machine is directly proportional to the magnitude
+          of flux within the machine as long as the ferromagnetic material within the machine is not
+          saturated.  The behaviour of the induced EMF (i.e. open circuit armature voltage) can be
+          examined in this experiment by varying the field current, with the speed of the machine
+          being held constant by the induction motor at 1500rpm.
+        </p>
+        <p>
+          The field current can only be reduced to a minimum of 50% of its full rated value in this
+          test, due to safety concerns about speed run-away at low levels of field current.
+        </p>
+        <p>
+          The values returned in this experiment are the open circuit armature voltage and the
+          field current in amps.
+        </p>
+      </description>
+      <paramsTitle>Field (Percent):</paramsTitle>
+      <fieldMin>50</fieldMin>
+      <fieldMax>100</fieldMax>
+      <fieldStep>10</fieldStep>
+    </setup>
+    <setup id="VoltageVsLoad">
+      <name>Voltage Regulation versus Load (Constant Speed)</name>
+      <description>
+        <p>
+          This experiment examines the behaviour of the armature voltage as a function of load.
+          The term “load” here can refer to two different aspects.  In the case of the DC machine
+          acting as a generator, the term load will refer to an electrical load that the generator
+          is supplying with electrical power.  This is of course the usual way that load is referred
+          to when discussing voltage regulation.  The armature of a DC machine has non-zero
+          resistance which is in series with the load.  So as the electrical load increases, the
+          voltage drop across the armature resistance will also increase, leading to a reduction
+          in voltage at the armature terminals (for a constant speed, field current and hence EMF).
+        </p>
+        <p>
+          However, in this experiment it is easier to operate the DC machine as a motor, which is
+          supplying varying values of torque to the AC machine, which is holding the speed of the
+          coupled shafts constant.  These varying values of supplied torque are essentially equivalent
+          to varying values of electrical load in the case of the DC machine acting as a generator;
+          the only difference is the armature current is in the opposite direction.
+        </p>
+        <p>
+          Therefore, we can still examine the affect of armature current on the armature voltage
+          (i.e. voltage regulation) in this case by varying the mechanical load the machine is supplying.
+        </p>
+        <p>
+          The values returned in this experiment are the armature voltage, the speed of the motor in
+          rpm and the percentage of load.
+        </p>
+      </description>
+      <paramsTitle>Load (Percent):</paramsTitle>
+      <loadMin>0</loadMin>
+      <loadMax>80</loadMax>
+      <loadStep>10</loadStep>
+    </setup>
+    <setup id="SpeedVsVoltage">
+      <name>Speed versus Applied Voltage (Constant Torque)</name>
+      <description>
+        <p>
+          This experiment examines the behaviour of the DC machine acting as a motor when the applied
+          stator voltage is varied.  The DC machine supplies constant torque in this test.
+        </p>
+        <p>
+          The values returned in this experiment are the armature voltage and speed of the motor in rpm.
+        </p>
+      </description>
+      <paramsTitle>Speed (RPM):</paramsTitle>
+      <speedMin>-1500</speedMin>
+      <speedMax>1500</speedMax>
+      <speedStep>500</speedStep>
+    </setup>
+    <setup id="SpeedVsField">
+      <name>Speed versus Field Current</name>
+      <description>
+        <p>
+          In this experiment, the DC machine drive is set to speed control mode (i.e. it is
+          operating as a motor) with the supplied armature current constant.  Once this step
+          has been performed, the motor is controlled to 750 rpm and the field current is
+          changed from its full rated value to 50% of its rated value.  The armature voltage
+          is measured for each of these steps.  By examining this experiment’s results, we can
+          examine the fundamental DC machine equation which describes the relationship between
+          the EMF, field current and speed of the machine, along with the equivalent armature
+          circuit of a DC machine.
+        </p>
+        <p>
+          The values returned in this experiment are the speed of the motor in rpm, the field
+          current in amps and the armature voltage.
+        </p>
+      </description>
+      <paramsTitle>Field (Percent):</paramsTitle>
+      <fieldMin>50</fieldMin>
+      <fieldMax>100</fieldMax>
+      <fieldStep>10</fieldStep>
+    </setup>
+  </configuration>
+  <validation>
+    <vdnSpeed>
+      <minimum>-1500</minimum>
+      <maximum>1500</maximum>
+      <stepMin>100</stepMin>
+      <stepMax>1000</stepMax>
+    </vdnSpeed>
+    <vdnField>
+      <minimum>50</minimum>
+      <maximum>100</maximum>
+      <stepMin>5</stepMin>
+      <stepMax>50</stepMax>
+    </vdnField>
+    <vdnLoad>
+      <minimum>0</minimum>
+      <maximum>80</maximum>
+      <stepMin>5</stepMin>
+      <stepMax>50</stepMax>
+    </vdnLoad>
+  </validation>
+  <experimentSpecification>
+    <setupId />
+    <speedMin />
+    <speedMax />
+    <speedStep />
+    <fieldMin />
+    <fieldMax />
+    <fieldStep />
+    <loadMin />
+    <loadMax />
+    <loadStep />
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+    <speedMin />
+    <speedMax />
+    <speedStep />
+    <fieldMin />
+    <fieldMax />
+    <fieldStep />
+    <loadMin />
+    <loadMax />
+    <loadStep />
+    <speedVector />
+    <fieldVector />
+    <voltageVector />
+    <loadVector />
+  </experimentResult>
+  <resultsApplet>
+    <archive></archive>
+    <code></code>
+  </resultsApplet>
+</labConfiguration>

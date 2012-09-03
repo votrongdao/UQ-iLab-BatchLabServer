@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE simulationConfig SYSTEM "SimulationConfig.dtd">-->
+<simulationConfig title="SimActivity #2" version="3.1">
+  <distance>20</distance>
+  <duration>5</duration>
+  <mean>280</mean>
+  <power>1.8</power>
+  <deviation>20</deviation>
+  <tube>
+    <offsetDistance>18</offsetDistance>
+    <homeDistance>30</homeDistance>
+    <moveRate>0.530</moveRate>
+  </tube>
+  <sources>
+    <selectTimes>11.2,11.8,5.9,7.4,8.6,9.9</selectTimes>
+    <returnTimes>8.6,6.6,13.7,12.5,11.2,9.9</returnTimes>
+    <firstLocation>A</firstLocation>
+    <homeLocation>F</homeLocation>
+  </sources>
+  <absorbers>
+    <firstLocation>A</firstLocation>
+    <homeLocation>A</homeLocation>
+  </absorbers>
+</simulationConfig>

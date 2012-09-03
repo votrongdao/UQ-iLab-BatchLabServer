@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<!--<!DOCTYPE labConfiguration SYSTEM "LabConfiguration.dtd">-->
+<labConfiguration title="AC Machine" version="3.1">
+  <navmenuPhoto>
+    <image>~/images/acmachine.jpg</image>
+  </navmenuPhoto>
+  <labCamera>
+    <url>http://openilabs.ilab.uq.edu.au/LabCameras/ACMachine1.htm</url>
+  </labCamera>
+  <labInfo>
+    <text />
+    <url />
+  </labInfo>
+  <configuration>
+    <setup id="NoLoad">
+      <name>No Load</name>
+      <description>
+        <p>
+          The no load test is used to gather information about the magnetizing branch in the
+          induction machine equivalent circuit.  When an induction motor is unloaded, the shaft
+          will be running at practically synchronous speed (not quite however, as if it were
+          running at synchronous speed no currents would be induced in the rotor windings) and
+          therefore a very small, practically zero slip.  This causes the equivalent rotor
+          impedance to be very large.  Therefore, the rotor can be considered to be an open
+          circuit in this test, and the data obtained from this test will give information on
+          the stator and magnetizing impedance.  The data retrieved from this test will be the
+          line to line voltage, phase current and power factor of the machine under test.
+        </p>
+      </description>
+    </setup>
+    <setup id="FullLoad">
+      <name>Full Load</name>
+      <description>
+        <p>
+          This experiment will give information regarding the behavior of the MUT induction
+          machine under full load conditions.  In this experiment, rather than having a separate
+          mechanical load for the MUT induction machine, the VSD controlled induction machine
+          will act as a mechanical load.  The VSD induction machine will act in torque control
+          mode to ensure that a counteracting full load torque is applied to the MUT induction
+          motor.  The data retrieved from this test will be the line to line voltage, phase
+          current and power factor of the machine under test.
+        </p>
+      </description>
+    </setup>
+    <setup id="LockedRotor">
+      <name>Locked Rotor</name>
+      <description>
+        <p>
+          The locked rotor test is used to calculate the equivalent rotor and stator impedances
+          of an induction motor.  When the rotor is stationary, the slip is equal to 1, therefore
+          the equivalent rotor resistance is low.  Because the equivalent rotor resistance is low,
+          the relatively high impedance magnetizing branch in the equivalent circuit can be
+          neglected. Therefore, the information received from the locked rotor test gives
+          information on solely the rotor and stator impedances of the induction motor under test.
+          The data retrieved from this test will be the line to line voltage, phase current and
+          power factor of the machine under test.
+        </p>
+        <p>
+          In this experiment, there is no fixed mechanical locking mechanism to hold the rotor in
+          place.  Rather, the shafts of both the variable speed drive (VSD) controlled induction
+          motor and the direct on-line machine under test (MUT) are mechanically coupled together.
+          The VSD induction motor is speed controlled to 0 rpm.  Therefore, when the MUT is
+          connected to the AC supply, the VSD induction machine will supply counteracting torque
+          to ensure that the coupled shaft speed remains at 0 rpm, which is equivalent to a locked
+          rotor.  The machine under test induction motor is connected to the mains 240V supply via
+          a X to X step down transformer.
+        </p>
+      </description>
+    </setup>
+    <setup id="SynchronousSpeed">
+      <name>Synchronous Speed</name>
+      <description>
+        <p>
+          This experiment is very similar to the no load test.  The major difference is that in
+          this experiment, the VSD controlled induction motor (rather than the direct on-line
+          machine under test) will bring the shaft speed up to the synchronous speed.  Therefore,
+          the VSD induction machine will be providing the rotational losses, and the MUT
+          induction machine will be supplying practically only magnetizing current.  The data
+          retrieved from this test will be the line to line voltage, phase current and power
+          factor of the VSD induction machine.
+        </p>
+      </description>
+    </setup>
+    <measurementCount>3</measurementCount>
+  </configuration>
+  <experimentSpecification>
+    <setupId />
+  </experimentSpecification>
+  <experimentResult>
+    <timestamp />
+    <title />
+    <version />
+    <experimentId />
+    <unitId />
+    <setupId />
+    <setupName />
+    <voltage />
+    <current />
+    <powerFactor />
+    <speed />
+  </experimentResult>
+  <resultsApplet>
+    <archive></archive>
+    <code></code>
+  </resultsApplet>
+</labConfiguration>

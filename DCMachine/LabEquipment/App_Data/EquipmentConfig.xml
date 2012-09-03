@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<equipmentConfig title="DC Machine" version="3.1">
+  <powerupDelay>0</powerupDelay>
+  <powerdownTimeout />
+  <initialiseDelay>26</initialiseDelay>
+  <initialiseEquipment>false</initialiseEquipment>
+  <!--<machineIP>10.0.3.201</machineIP>-->
+  <machineIP>127.0.0.1</machineIP>
+  <machinePort>502</machinePort>
+  <measurementDelay>3</measurementDelay>
+</equipmentConfig>

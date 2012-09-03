@@ -1,0 +1,60 @@
+<!ELEMENT labConfiguration (navmenuPhoto, labCamera, labInfo, configuration, validation, experimentSpecification, experimentResult, resultsApplet)>
+<!ATTLIST labConfiguration title CDATA #REQUIRED version CDATA #REQUIRED>
+
+<!ELEMENT navmenuPhoto (image)>
+<!ELEMENT labCamera (url)>
+<!ELEMENT labInfo (text, url)>
+<!ELEMENT image (#PCDATA)>
+<!ELEMENT text (#PCDATA)>
+<!ELEMENT url (#PCDATA)>
+
+<!ELEMENT configuration (setup+, sources, absorbers, distances)>
+<!ELEMENT setup (name, description, absorberName*, distance, duration, repeat)>
+<!ATTLIST setup id CDATA #REQUIRED>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT description (p*)>
+<!ELEMENT p (#PCDATA)>
+<!ELEMENT distance (#PCDATA)>
+<!ELEMENT duration (#PCDATA)>
+<!ELEMENT repeat (#PCDATA)>
+
+<!ELEMENT sources (source+)>
+<!ATTLIST sources default CDATA #REQUIRED>
+<!ELEMENT source (name, location)>
+<!ELEMENT location (#PCDATA)>
+
+<!ELEMENT absorbers (absorber+)>
+<!ATTLIST absorbers default CDATA #REQUIRED>
+<!ELEMENT absorber (name, location)>
+
+<!ELEMENT distances (minimum, maximum, stepsize)>
+<!ELEMENT minimum (#PCDATA)>
+<!ELEMENT maximum (#PCDATA)>
+<!ELEMENT stepsize (#PCDATA)>
+
+<!ELEMENT validation (vdnDistance, vdnDuration, vdnRepeat, vdnTotaltime)>
+<!ELEMENT vdnDistance (minimum, maximum)>
+<!ELEMENT vdnDuration (minimum, maximum)>
+<!ELEMENT vdnRepeat (minimum, maximum)>
+<!ELEMENT vdnTotaltime (minimum, maximum)>
+
+<!ELEMENT experimentSpecification (setupId,
+  sourceName, absorberName, distance, duration, repeat)>
+<!ELEMENT setupId (#PCDATA)>
+
+<!ELEMENT experimentResult (timestamp, title, version, experimentId, unitId, setupId, setupName,
+  sourceName, absorberName, distance, duration, repeat, dataType, dataVector)>
+<!ELEMENT timestamp (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT version (#PCDATA)>
+<!ELEMENT experimentId (#PCDATA)>
+<!ELEMENT unitId (#PCDATA)>
+<!ELEMENT setupName (#PCDATA)>
+<!ELEMENT dataType (#PCDATA)>
+<!ELEMENT sourceName (#PCDATA)>
+<!ELEMENT absorberName (#PCDATA)>
+<!ELEMENT dataVector (#PCDATA)>
+
+<!ELEMENT resultsApplet (archive, code)>
+<!ELEMENT archive (#PCDATA)>
+<!ELEMENT code (#PCDATA)>

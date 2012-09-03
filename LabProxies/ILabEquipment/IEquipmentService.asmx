@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="IEquipmentService.asmx.cs" Class="ILabEquipment.EquipmentService" %>
