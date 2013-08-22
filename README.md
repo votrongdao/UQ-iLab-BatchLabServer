@@ -14,3 +14,5 @@ Synchronous Machine -
 Radioactivity - 
 Time-Of-Day -
 
+UQ iLabs - Changed some of client web pages to look similar to UQ-ITEE. Added a client web page to upload student class
+	lists and generate accounts for use with the Machines Lab.

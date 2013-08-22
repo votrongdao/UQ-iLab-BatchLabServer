@@ -1,0 +1,58 @@
+/*
+ * Navmenu Quick Links
+ */
+#quick-links
+{
+	margin-left: 9px;
+	margin-right: 9px;
+}
+#quick-links table
+{
+	width: 180px;
+	border-collapse: collapse;
+	background-color: #EEF6E7;
+	background-image: url(/Images/quick-links-table.gif);
+}
+#quick-links th
+{
+	width: 180px;
+	padding: 5px;
+	text-align: center;
+	font-weight: bold;
+	color: #FFF;
+	font-family: Arial, Verdana, Sans-Serif;
+	background: url(/Images/quick-links-th.gif) #E7ECEF bottom no-repeat;
+}
+#quick-links a
+{
+	width: 150px;
+	padding: 5px;
+	text-decoration: none;
+	display: block;
+}
+#quick-links a:hover
+{
+	background-color: #ECD7FF;
+}
+#quick-links td.ql-l
+{
+	width: 25px;
+	text-align: right;
+}
+#quick-links td.ql-m
+{
+	width: 150px;
+	text-align: left;
+}
+#quick-links td.ql-r
+{
+	width: 5px;
+	text-align: center;
+}
+#quick-links td.ql-b
+{
+	width: 180px;
+	height: 17px;
+	text-align: center;
+	background: url(/Images/quick-links-bottom.gif) #E7ECEF top no-repeat;
+}

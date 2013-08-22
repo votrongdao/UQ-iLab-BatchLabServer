@@ -1,0 +1,37 @@
+FILE: UQiLabs30_Development_YYYYMMDDD.zip
+
+26 Aug 2011:
+Fixed error where user requests lost password replacement and username doesn't
+exist.
+Copied required iLab source files to this project so that all necessary files
+are available to rebuild the project.
+
+4 Aug 2011:
+Added the ability to upload a student class list and create user accounts from
+that list. The passwords are 6 character alphanumic and are randomly generated.
+Log into the UQ iLab ServiceBroker as 'superuser' and the 'Manage Users' webpage
+gets presented.
+
+26 Jul 2010:
+Added timezone session variable with javascript in login.ascx.
+
+24 Jul 2010:
+Added CEIT logo.
+
+10 Jul 2010:
+Fixed up some style sheet problems with error message display. Removed unused
+entries from the style sheet.
+
+13 Jun 2010:
+Updated webpages and styles sheets.
+
+25 May 2010:
+Move system message from home page into database. Hand-edit database to insert message.
+
+24 May 2010:
+The UQ ilab ServiceBroker does not need to duplicate the entire MIT ilab ServiceBroker.
+It only needs to provide an interface for users to run experiments. That means
+the webservice remains with the MIT build.
+
+Removed all admin web pages and left two skeletons: ManageUsers and AdminServices.
+Made username field 'disabled' on Account page.

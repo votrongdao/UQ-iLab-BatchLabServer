@@ -1,0 +1,295 @@
+/*
+ * "Master" and "Content" webpage layouts
+ */
+body
+{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+	background: #FFFFFF;
+	margin: 1px;
+}
+h1, h2, h3, h4
+{
+	font-weight: bold;
+}
+h1
+{
+	font-size: 160%;
+}
+h2
+{
+	font-size: 140%;
+}
+h3
+{
+	font-size: 120%;
+}
+h4
+{
+	font-size: 100%;
+}
+#master table
+{
+	width: 100%;
+	border: 0px;
+	padding: 0px;
+}
+#master td.menu
+{
+	background-color: #E7ECEF;
+	vertical-align: top;
+	width: 200px;
+}
+#master td.content
+{
+	margin: 0px;
+	padding: 5px;
+	vertical-align: top;
+	width: 100%;
+}
+#master td.headercontent
+{
+	font-size: 140%;
+	font-weight: bold;
+	color: #333;
+}
+#pagecontent
+{
+	margin: 10px 0px 10px 0px;
+	padding: 0px;
+}
+
+/*
+ * Buttons
+ */
+td.button
+{
+	text-align: left;
+	padding-top: 10px;
+	padding-bottom: 15px;
+}
+.aspbutton
+{
+	width: 72px;
+	height: 24px;
+}
+
+td.textlabel
+{
+    height: 24px;
+	width: 100px;
+    vertical-align: middle;
+}
+.responsebox
+{
+	background-color: #EEF8E4;
+	border: solid 1px Gray;
+	padding: 10px;
+	width: 100%;
+}
+
+/*
+ * Response messages
+ */
+/* Utilities.FormatConfirmationMessage(msgText) */
+.infomessage
+{
+	background-color: #C0FFC0;
+	color: Black;
+	border: solid 1px Black;
+	padding: 0px 10px 0px 10px;
+}
+/* Utilities.FormatWarningMessage(msgText) */
+.warningmessage
+{
+	background-color: #FFC0C0;
+	color: Black;
+	border: solid 1px Black;
+	padding: 0px 10px 0px 10px;
+}
+/* Utilities.FormatErrorMessage(msgText) */
+.errormessage
+{
+	background-color: #FFC0C0;
+	color: Black;
+	border: solid 1px Black;
+	padding: 0px 10px 0px 10px;
+}
+
+/*
+ * Help.aspx
+ */
+#help p.question
+{
+	font-weight: bold;
+}
+#help p.answer
+{
+	margin-left: 20px;
+}
+#help .textbox
+{
+	width: 200px;
+}
+#help .dropdownlist
+{
+	width: 206px;
+}
+#help .editbox
+{
+	width: 300px;
+}
+
+/*
+ * MyAccount.aspx
+ */
+.account-left
+{
+	background-color: #EEE4F8;
+	border: solid 1px grey;
+	padding: 5px;
+    width: 400px;
+}
+#myaccount td.label
+{
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px 5px 5px 0px;
+}
+#myaccount td.information
+{
+	text-align: left;
+	vertical-align: middle;
+	padding: 5px 0px 5px 0px;
+}
+#myaccount .textbox
+{
+    width: 240px;
+}
+
+/*
+ * MyExperiments.aspx
+ */
+#myexperiments .dropdownlist
+{
+    width: 90px;
+}
+#myexperiments .textbox-time
+{
+    width: 180px;
+}
+#myexperiments .textbox-long
+{
+    width: 480px;
+}
+#myexperiments td.button
+{
+    padding-top: 10px;
+}
+ 
+/*
+ * Register.aspx
+ */
+#register .textbox
+{
+    width: 200px;
+}
+#register .dropdownlist
+{
+    width: 206px;
+}
+#register .groupdropdownlist
+{
+    width: 306px;
+}
+#register .editbox
+{
+    width: 300px;
+}
+
+/*
+ * ReportBug.aspx
+ */
+#reportbug .textbox
+{
+    width: 200px;
+}
+#reportbug .dropdownlist
+{
+    width: 206px;
+}
+#reportbug .editbox
+{
+    width: 300px;
+}
+
+/*
+ * ShowExperiment.aspx
+ */
+#showexperiment .textbox-time
+{
+    width: 90px;
+}
+#showexperiment .textbox-long
+{
+    width: 360px;
+}
+#showexperiment .textbox-short
+{
+    width: 180px;
+}
+#showexperiment td.button
+{
+    padding-top: 10px;
+}
+
+/*
+ * MyClient.aspx
+ */
+.singlelab-left
+{
+	background-color: #EEE4F8;
+	border: solid 1px grey;
+	padding: 10px;
+	width: 480px;
+}
+
+/*
+ * MyClientList.aspx, MyGroups.aspx
+ */
+.group-left
+{
+	background-color: #EEE4F8;
+	border: solid 1px grey;
+	padding: 10px;
+	width: 480px;
+}
+
+/*
+ * For boxes that display news, announcements, and messages
+ */
+#messagebox-right
+{
+	/* background-color: #E7ECEF; Light blue */
+	background-color: #80F880; /* Light green */
+	border: solid 1px grey;
+	padding: 10px;
+	margin: 0 0 5px 0;
+	width: 320px;
+	float: right;
+}
+#messagebox-right p.message
+{
+	margin-left: 20px;
+	margin-bottom: 0;
+	padding: 0 0 0 0;
+}
+#messagebox-right p.date
+{
+	margin-left: 20px;
+	font-style: italic;
+	margin-top: 0;
+	margin-bottom: 10px;
+	padding: 0 0 0 0;
+}
+
